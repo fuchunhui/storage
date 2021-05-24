@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StorageEvent</title>
+    <style>
+      #sessValue {
+        width: 145px;
+      }
+      #content {
+        width: 420px;
+        height: 200px;
+        margin-top: 20px;
+        border: 1px solid black;
+      }
+      #content p {
+        height: 40px;
+        line-height: 40px;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h3>sessionStorage</h3>
+      <button id="sessBtn">随机宽度值</button>
+      <input id="sessValue" value="145"/>
+    </section>
+    <section>
+      <h3>localStorage</h3>
+      <button id="localBtn">随机背景色</button>
+      <input value="#FFFFFF" id="localValue"/>
+    </section>
+    <section>
+      <div id="content">
+        打开至少两个窗口，点击随机背景色，去其他窗口看变化
+      </div>
+    </section>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>

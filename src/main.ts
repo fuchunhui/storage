@@ -43,8 +43,9 @@ const storageChanged = (event: StorageEvent) => {
   console.log({...event});
   const content = document.getElementById('content');
   if (content) {
-    const {newValue, oldValue} = event;
+    const {key, newValue, oldValue} = event;
     content.innerHTML = `
+      <p>key: ${key}</p>
       <p style="background-color: ${newValue}">newValue: ${newValue}</p>
       <p style="background-color: ${oldValue}">oldValue: ${oldValue}</p>
     `;

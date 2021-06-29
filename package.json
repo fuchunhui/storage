@@ -1,6 +1,6 @@
 {
   "name": "storage",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "html storage",
   "main": "index.html",
   "scripts": {
@@ -9,8 +9,8 @@
     "serve": "vite preview"
   },
   "devDependencies": {
-    "typescript": "^4.2.4",
-    "vite": "^2.2.3"
+    "typescript": "^4.3.4",
+    "vite": "^2.3.8"
   },
   "keywords": [],
   "author": "",
